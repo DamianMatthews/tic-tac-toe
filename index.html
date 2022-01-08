@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tic-tac-toe.js" defer></script>
+</head>
+<body>
+    <div id="header">TIC-TAC-TOE</div>
+    <div id="overlay" onclick="removeOverLay()">
+        <div id="text">Overlay Text</div>
+    </div> 
+    <div id="container">
+        <div id="inputs">
+            <input placeholder="Enter_Name(X)" id="name1">
+            <input placeholder="Enter_Name(O)" id ="name2">
+        </div>
+        <div id="gameContainer">
+            <button id="0" class="gameButtons"></button>
+            <button id="1" class="gameButtons"></button>
+            <button id="2" class="gameButtons"></button>
+            <button id="3" class="gameButtons"></button>
+            <button id="4" class="gameButtons"></button>
+            <button id="5" class="gameButtons"></button>
+            <button id="6" class="gameButtons"></button>
+            <button id="7" class="gameButtons"></button>
+            <button id="8" class="gameButtons"></button>
+        </div>
+        <button id="resetButton" onclick="resetGame()">RESET</button>
+    </div>
+</body>
+</html>

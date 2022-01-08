@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#041C32;
+    color: white;
+    font-size: 100px;
+    height: 100%;
+    font-family: monospace;
+    /* min-width: 1140px; */
+}
+
+#gameContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    border: solid;
+    border-color: black ;
+    border-width: 20px;
+}
+
+.gameButtons {
+    height: 33.33333%;
+    width: 33.33333%;
+    border: solid;
+    border-color: #04293A;
+    background-color: #064663;
+    color:#ECB365;
+    border-width: 1px;
+    font-size: 100px;
+}
+
+.gameButtons:hover {
+    height: 33.33333%;
+    width: 33.33333%;
+    border: solid;
+    border-color: #04293A;
+    background-color: #064663;
+    color:#ECB365;
+    border-width: 1px;
+    font-size: 100px;
+    opacity: 80%;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    /* rgba(0,0,0,0.5); Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+#inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+ #name1, #name2 {
+     margin-top: 130px;
+     width: 250px;
+     height: 50px;
+     font-size: 30px;
+     background-color: lightgrey;
+     border: none;
+     border-radius: 10px;
+ }
+
+ #resetButton {
+     width: 100px;
+     height: 50px;
+     border-radius: 10px;
+     border: solid;
+     background-color: #064663;
+     color: white;
+     font-size: 25px;
+     font-weight: 900;
+     border-width: 2px;
+     border-color: white;
+ }
+
+ #resetButton:hover {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: darkred;
+    font-size: 25px;
+    font-weight: 900;
+ }
+
+ #container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+ }
+
+ #header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 120px;
+     border-bottom: solid;
+     margin-bottom: 10px;
+     border-width: 100%;
+     background-color: #064663;
+     margin-bottom: 50px;
+     position: absolute;
+     left: 0px;
+     right: 0px;
+     top: 0px;
+ }
